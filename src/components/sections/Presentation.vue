@@ -2,7 +2,7 @@
     <section id="presentation">
         <h2>Presentation</h2>
         <figure>
-            <img class="photo-profil" src="#" alt="image de profile">
+            <img class="photo-profil" src="@/assets/iconAntoine.png" alt="image de profile">
         </figure>
         <div class="content-presentation">
             <p>Antoine barbier</p>
@@ -29,6 +29,7 @@
         height: 200px;
         max-width: 200px;
         max-height: 200px;
+        filter: hue-rotate(225deg);
 
         border: 2px solid rgba(255,255,255,0.70);
         border-radius: 100%;

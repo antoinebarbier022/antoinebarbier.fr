@@ -27,6 +27,6 @@
 
 <style scoped>
     .main{
-        min-height: calc(100% - 300px);
+        min-height: calc(100% - 200px);
     }
 </style>
