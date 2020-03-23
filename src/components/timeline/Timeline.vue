@@ -56,9 +56,9 @@ import Content from './Content-timeline.vue'
         position:relative;
         width: calc(100% -40px); /* moins le padding pour bien centrer le bloc entier avec le titre */
         height: 100%;
-        border-left: 5px solid;
-        border-image:linear-gradient(to bottom, rgb(0, 0, 0));
-        border-image-slice: 1;
+        border-left: 5px solid black;
+        /*border-image:linear-gradient(to bottom, rgb(0, 0, 0));
+        border-image-slice: 1;*/
         padding:20px;
     }
 
