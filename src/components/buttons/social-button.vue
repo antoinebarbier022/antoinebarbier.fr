@@ -1,6 +1,6 @@
 <template>
     <div class="social-button">
-        <a :href="url" target="_blank" :title="name" class="icon"></a>
+        <a :href="url" target="_blank" :title="name" :style="{ backgroundImage: `url(${image})`}" class="icon"></a>
     </div>
 </template>
 
@@ -11,6 +11,11 @@
             name: String,
             url: String,
             img: String
+        },
+        computed:{
+            image: function(){
+                return this.img ? require('@/assets/reseaux-sociaux/' + this.img) : require('@/assets/reseaux-sociaux/instagram@3x.png') ; 
+            }
         }
     }
 </script>
@@ -26,7 +31,6 @@
         background-repeat: no-repeat;
         background-size: auto 25px;
         background-position: center;
-        background-image: url('~@/assets/reseaux-sociaux/facebook@3x.png');
     }
 
     a.icon:hover{
