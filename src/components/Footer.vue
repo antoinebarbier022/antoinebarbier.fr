@@ -1,13 +1,12 @@
 <template>
-    <footer>
+    <footer id="footer">
         <nav>
             <div class="social-buttons">
-                <SocialButton class="social-button" name="Instagram" img="instagram@3x.png" url="www.instagram.com" />
-                <SocialButton class="social-button" name="Facebook" img="facebook@3x.png" url="www.facebook.com" />
-                <SocialButton class="social-button" name="Twitter" img="twitter@3x.png" url="www.twitter.com" />
+                <SocialButton class="social-button" name="instagram" img="instagram@3x.png" url="https://www.instagram.com" />
+                <SocialButton class="social-button" name="facebook" img="facebook@3x.png" url="https://www.facebook.com" />
+                <SocialButton class="social-button" name="twitter" img="twitter@3x.png" url="https://www.twitter.com" />
             </div>
-            <a>antoinebarbier022@gmail.com</a>
-            <a>Linkedin</a>
+            <a class="email" href="mailto:antoinebarbier022@gmail.com">antoinebarbier022@gmail.com</a>
         </nav>
     </footer>
 </template>
@@ -24,18 +23,28 @@
 
 <style scoped>
     footer{
-        height:100px;
+        height:130px;
+        background-color:  rgba(120, 120, 120, 0.1);
+        color:white;
+    }
+
+    a{
+        font-size: 1.1rem;
+        color:white;
     }
 
     footer nav{
         display:flex;
             flex-direction: column;
+        padding-bottom:20px;
     }
     .social-buttons{
         display:flex;
             flex-direction: row;
             justify-content: center;
+        margin:20px;
     }
+
     .social-button{
         margin:0px 20px 0px 20px;
     }

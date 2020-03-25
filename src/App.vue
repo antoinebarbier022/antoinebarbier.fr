@@ -3,8 +3,8 @@
     <div id="container">
       <Header/>
       <Main/>
-      <Footer/>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -31,13 +31,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
 *{
     color:white;
+    text-decoration: none;
+    list-style-type: none;
+    margin:0;
+    padding:0;
 }
+
 p{
   font-size: 1.1rem;
   margin:0;
 }
+
 html, body{
   width:100%;
   height:100%;
@@ -45,10 +52,17 @@ html, body{
   padding:0;
 }
 
+h2{
+  padding:20px;
+  font-size:2rem;
+  text-shadow: 2px 2px 3px rgba(21,8,15,0.50);
+}
+
 body{
   width:100%;
   height:100%;
-  background: linear-gradient(-45deg, #152775,rgb(28, 41, 47));
+  background-color:#000e2c ;
+  /*background: linear-gradient(-45deg, #040b2c, #000);*/
   background-size: 400% 400%;
   background-attachment: fixed;
 	animation: gradient 30s ease infinite;

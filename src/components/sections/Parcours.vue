@@ -1,6 +1,6 @@
 <template>
     <section id="parcours">
-        <h2>Parcours</h2>
+        <h2>Mes Études</h2>
         <Timeline/>
     </section>
 </template>

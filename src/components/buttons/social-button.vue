@@ -1,6 +1,8 @@
 <template>
-    <div class="social-button">
-        <a :href="url" target="_blank" :title="name" :style="{ backgroundImage: `url(${image})`}" class="icon"></a>
+    <div class="social-button" :class="name">
+        <a  :href="url" target="_blank" 
+            :title="name" 
+         class="icon"></a>
     </div>
 </template>
 
@@ -9,6 +11,7 @@
         name:"social-button",
         props:{
             name: String,
+            color:String,
             url: String,
             img: String
         },
@@ -33,9 +36,12 @@
         background-position: center;
     }
 
-    a.icon:hover{
-        /*opacity: 0.8;*/
-        background-color:rgba(14, 107, 184, 0.7);
-        border-radius: 5px;
-    }
+    .facebook .icon{ background-image: url('~@/assets/reseaux-sociaux/facebook@3x.png');}
+    .facebook:hover{ border-radius: 5px; background-color: rgb(48, 78, 149);}
+
+    .instagram .icon{ background-image: url('~@/assets/reseaux-sociaux/instagram@3x.png');}
+    .instagram:hover{ border-radius: 5px; background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+    
+    .twitter .icon{ background-image: url('~@/assets/reseaux-sociaux/twitter@3x.png');}
+    .twitter:hover{ border-radius: 5px; background-color: rgb(74, 161, 235);}
 </style>

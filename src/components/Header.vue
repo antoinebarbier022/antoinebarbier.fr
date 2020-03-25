@@ -1,12 +1,12 @@
 <template>
     <header>
-        <h1>Antoine Barbier</h1>
+        <h1><a href="antoinebarbier.fr">Antoine Barbier</a></h1>
         <nav class="menu">
-            <a href="#" >Home</a>
-            <a href="#parcours" >Parcours</a>
-            <a href="#skills" >Compétences</a>
-            <a href="#hobbies" >hobbies</a>
-            <a href="#" >Contact</a>
+            <span class="link-text" v-scroll-to="'#element'">   Home</span>
+            <span class="link-text" v-scroll-to="'#parcours'">  Parcours</span>
+            <span class="link-text" v-scroll-to="'#skills'">    Compétences</span>
+            <span class="link-text" v-scroll-to="'#hobbies'">   hobbies</span>
+            <span class="link-text" v-scroll-to="'#footer'">    Contact</span>
         </nav>
     </header>
 </template>
@@ -19,7 +19,8 @@
 
 <style scoped>
     header{
-        height:100px;
+        height:auto;
+        margin-bottom:50px;
     }
     header nav{
         display:flex;
@@ -27,13 +28,46 @@
             justify-content: center;
     }
 
-    header nav a{
+    header nav .link-text{
         text-decoration: none;
         padding:10px;
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor:pointer;
     }
 
     h1{
-        margin:0;
+        margin-top:20px;
+        margin-bottom:0px;
+        font-size: 4.5rem;
+        text-shadow: 2px 2px 3px rgba(21,8,15,0.50);
     }
+
+
+.link-text {
+    transition: 1s ease-in-out;
+}
+
+
+.link-text{
+    position: relative;
+}
+
+.link-text:after{
+content: '';
+position: absolute;
+width: 0; height: 2px;
+display: block;
+margin-top: 0px;
+right: 0;
+background: #fff;
+transition: width .2s ease;
+-webkit-transition: width .2s ease;
+}
+.link-text:hover:after{
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
 
 </style>

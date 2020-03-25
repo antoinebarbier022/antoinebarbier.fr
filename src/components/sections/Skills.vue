@@ -2,6 +2,7 @@
     <section id="skills">
         <h2>Compétences</h2>
 
+
     </section>
 </template>
 
