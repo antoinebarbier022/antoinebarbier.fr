@@ -2,10 +2,9 @@
     <header>
         <h1><a href="antoinebarbier.fr">Antoine Barbier</a></h1>
         <nav class="menu">
-            <span class="link-text" v-scroll-to="'#element'">   Home</span>
-            <span class="link-text" v-scroll-to="'#parcours'">  Parcours</span>
-            <span class="link-text" v-scroll-to="'#skills'">    Compétences</span>
-            <span class="link-text" v-scroll-to="'#hobbies'">   hobbies</span>
+            <span class="link-text" v-scroll-to="'#parcours'">  Mes études</span>
+            <span class="link-text" v-scroll-to="'#skills'">    Mes Compétences</span>
+            <!--<span class="link-text" v-scroll-to="'#hobbies'">   Hobbies</span>-->
             <span class="link-text" v-scroll-to="'#footer'">    Contact</span>
         </nav>
     </header>
@@ -33,10 +32,10 @@
         padding:10px;
         font-weight: 300;
         text-transform: uppercase;
-        cursor:pointer;
+        cursor:pointer
     }
 
-    h1{
+    h1 a{
         margin-top:20px;
         margin-bottom:0px;
         font-size: 4.5rem;
@@ -46,6 +45,7 @@
 
 .link-text {
     transition: 1s ease-in-out;
+    color:white;
 }
 
 

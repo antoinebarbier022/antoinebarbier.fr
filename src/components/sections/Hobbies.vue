@@ -1,21 +1,23 @@
 <template>
-  <div id="hobbies">
-    <h2>Mes Passions</h2>
-    <div class="bloc-text-media" v-for="event in historique" :key="event.id">
-        <div :class="event.media === 'no-media'?'bloc-text bloc-text-no-media' : 'bloc-text' ">
-            <p class="text">{{event.text}}</p>
+    <section id="hobbies">
+        <div class="container">
+            <h2>Mes Passions</h2>
+            <div class="bloc-text-media" v-for="event in historique" :key="event.id">
+                <div :class="event.media === 'no-media'?'bloc-text bloc-text-no-media' : 'bloc-text' ">
+                    <p class="text">{{event.text}}</p>
+                </div>
+                <!-- conditions pour savoir quelle bloc de média afficher-->
+                <div class="bloc-media" v-if="event.media === 'image' && event.url" >
+                    <figure class="bloc-image">
+                        <img :src="require('@/assets/illustrations/'+event.url)" alt="image">
+                    </figure>
+                </div>
+                <div class="bloc-no-media" v-if="event.media === 'no-media'">
+                    no-media
+                </div> 
+            </div> 
         </div>
-        <!-- conditions pour savoir quelle bloc de média afficher-->
-        <div class="bloc-media" v-if="event.media === 'image' && event.url" >
-            <figure class="bloc-image">
-                <!--<img :src="require('@/assets/photos/'+event.url)" alt="image">-->
-            </figure>
-        </div>
-        <div class="bloc-no-media" v-if="event.media === 'no-media'">
-            no-media
-        </div> 
-    </div> 
-  </div>
+  </section>
 </template>
 
 <script>
@@ -34,25 +36,25 @@ Sed fermentum egestas viverra. Nunc id nulla pretium, rutrum justo aliquet, fini
                                 title:"Avril 2018"
                                 ,text:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque odio. Curabitur tristique massa maximus libero malesuada volutpat. Morbi nibh dui, interdum id nisl congue, tempor molestie erat. Nunc imperdiet massa non enim mattis, vitae placerat turpis sollicitudin. Nullam sit amet ullamcorper elit. Curabitur vitae quam in augue rutrum euismod tempor condimentum felis. Aliquam nisl turpis, bibendum at pulvinar nec, placerat at neque. Nullam at massa at urna commodo sagittis.`
                                 ,media:"image"
-                                ,url:"avril2018.jpg"
+                                ,url:"IMG_1658.png"
                             },
                             {   id:1,
                                 title:"Juin 2018"
                                 ,text:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque odio. Curabitur tristique massa maximus libero malesuada volutpat. Morbi nibh dui, interdum id nisl congue, tempor molestie erat. Nunc imperdiet massa non enim mattis, vitae placerat turpis sollicitudin. Nullam sit amet ullamcorper elit. Curabitur vitae quam in augue rutrum euismod tempor condimentum felis. Aliquam nisl turpis, bibendum at pulvinar nec, placerat at neque. Nullam at massa at urna commodo sagittis.`
-                                ,media:"video"
-                                ,url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/388844193&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                                ,media:"image"
+                                ,url:"IMG_1658.png"
                             },
                             {   id:2,
                                 title:"Août 2018"
                                 ,text:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque odio. Curabitur tristique massa maximus libero malesuada volutpat. Morbi nibh dui, interdum id nisl congue, tempor molestie erat. Nunc imperdiet massa non enim mattis, vitae placerat turpis sollicitudin. Nullam sit amet ullamcorper elit. Curabitur vitae quam in augue rutrum euismod tempor condimentum felis. Aliquam nisl turpis, bibendum at pulvinar nec, placerat at neque. Nullam at massa at urna commodo sagittis.`
                                 ,media:"image"
-                                ,url:"aout2018.jpg"
+                                ,url:"IMG_1662.png"
                             },
                             {   id:3,
                                 title:"Décembre 2018"
                                 ,text:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque odio. Curabitur tristique massa maximus libero malesuada volutpat. Morbi nibh dui, interdum id nisl congue, tempor molestie erat. Nunc imperdiet massa non enim mattis, vitae placerat turpis sollicitudin. Nullam sit amet ullamcorper elit. Curabitur vitae quam in augue rutrum euismod tempor condimentum felis. Aliquam nisl turpis, bibendum at pulvinar nec, placerat at neque. Nullam at massa at urna commodo sagittis.`
                                 ,media:"image"
-                                ,url:"disques-decembre2018.jpg"
+                                ,url:"IMG_1658.png"
                             }        
                         ]
 
@@ -72,6 +74,7 @@ Sed fermentum egestas viverra. Nunc id nulla pretium, rutrum justo aliquet, fini
     #hobbies{
         padding:20px;
         margin-bottom:50px;
+        display:none;
     }
 
     /* Css général de l'historique  */
@@ -119,15 +122,8 @@ Sed fermentum egestas viverra. Nunc id nulla pretium, rutrum justo aliquet, fini
     .bloc-media > .bloc-image img{
         width:100%;
         height:auto;
-        border-radius:5px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     }
 
-     .bloc-media > .bloc-video {
-        width:500px;
-        height:300px;
-        min-height:auto;
-    }
     /* permet d'alterner text-image droite-gauche */
     /* mettre odd ou even pour choisir si ça commence par image à droite ou à gauche */
     

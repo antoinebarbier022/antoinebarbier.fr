@@ -1,9 +1,15 @@
 <template>
-    <div class="bloc-content" :class="text ? 'effectHover': ''" @click="displayContent">
-        <p class="title" v-if="title" >{{title}}</p>
-        <p class="subtitle" v-if="subtitle" >{{subtitle}}</p>
-        <p class="date" v-if="date">{{date}}</p>
-        <p class="content" v-if="showContent">{{text}}</p>
+    <div class="bloc-content" :class="text ? (showContent ? '' : 'effectHover'): ''" @click="displayContent">
+        <div class="infos-timeline">
+            <p class="date" v-if="date">{{date}}</p>
+            <div>
+                <p class="title" v-if="title" >{{title}}</p>
+                <p class="subtitle" v-if="subtitle" >{{subtitle}}</p>
+            </div>
+        </div>
+        <div class="content" v-if="showContent">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -33,11 +39,10 @@
     }
 
     .bloc-content{
-        width:calc(100% - 30px);
+        width:calc(100% - 20px);
         height:100%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.08);
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-
         padding: 10px;
         margin-bottom:20px;
         border-radius: 5px;
@@ -45,23 +50,26 @@
     }
 
     .effectHover:hover{
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: rgba(255, 255, 255, 0.1);
         cursor:pointer;
     }
+
     .bloc-content:before {
         content: "";
         position: absolute;
         right:100%;
-        margin-right: -5px;
+        margin-top:10px;
+        margin-right: -7px;
         border-radius: 50%;
         padding: 0px;
         height: 1em;
         width: 1em;
-        background-image:linear-gradient(to bottom, rgba(255, 255, 255), rgb(156, 156, 156));
+        background-image:linear-gradient(to bottom, rgb(233, 233, 233), rgb(202, 202, 202));
         text-align: center;
         line-height: 1em;
         color: white;
         font-size: 1em;
+        cursor: pointer;
   }
 
   .bloc-content{
@@ -71,6 +79,13 @@
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */  
   }
+
+  .infos-timeline{
+      display:flex;
+        justify-content: space-between;
+        
+  }
+
 .title{
     text-align: right;
     font-weight: 700;
@@ -78,15 +93,14 @@
 }
 .subtitle{
     text-align: right;
-    color:rgb(224, 224, 224);
-    /* color:rgb(109, 109, 109); */
-    font-weight: 700;
+    color:#b3b3b3;
+    font-weight: 500;
 }
 .date{
-    text-align: right;
-    color:rgb(224, 224, 224);
+    text-align: left;
     font-weight: 700;
-    font-style: italic;
+  font-family: 'La-Belle-Aurore';
+  font-size:1.2rem;
 }
 
 .content{
@@ -95,6 +109,8 @@
     margin-top:20px;
     padding:20px;
 }
+
+
 
 
 </style>
