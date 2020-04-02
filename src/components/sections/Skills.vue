@@ -90,17 +90,12 @@
     }
 
     h3{
-        display:block;
         padding-top:5px;
         padding-bottom:5px;
         padding-right:40px;
         padding-left:40px;
-        margin:auto;
-
-        
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.06);
-        opacity: 95%;
     }
 
 </style>
