@@ -13,7 +13,7 @@
                 <p class="profil-description">
                     Je m'appelle Antoine Barbier
                     et je suis étudiant à la Faculté des Sciences de Montpellier en Licence informatique. 
-                    <br>En 2019 j'ai eu l'opportunité de partir étudié au Canada à l'<b>UQAC</b> (Université du Quèbec de Chicoutimi) dans le cadre d'un échange universitaire. 
+                    <br>En 2019 j'ai eu l'opportunité de partir étudier au Canada à l'<b>UQAC</b> (Université du Quèbec de Chicoutimi) dans le cadre d'un échange universitaire. 
                 </p>
             </div>
         </div>
