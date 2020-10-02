@@ -23,6 +23,16 @@ import Content from './Content-timeline.vue'
                     timeline:
                         [
                             {
+                                title:"Facultés des Sciences - Université de Montpellier"
+                                ,subtitle:"Master 1 AIGLE"
+                                ,date:"2020 - 2021"
+                                ,text:`
+
+                                        <p>Parcours Master Architectures et Ingénieurie du Logiciel et du Web (AIGLE)</p>
+                                        <p><i>Année en cours ...</i></p><br>
+                                        `
+                            },
+                            {
                                 title:"UQAC - Université du Québec à Chicoutimi"
                                 ,subtitle:"Échange universitaire"
                                 ,date:"2019 - 2020"
