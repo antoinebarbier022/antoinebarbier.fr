@@ -42,18 +42,22 @@
     figure .photo-profil{
         width: 300px;
         height: 300px;
-        max-width: 300px;
-        max-height: 300px;
         /*filter: hue-rotate(225deg);*/
-
         border: 2px solid rgba(255,255,255,0.70);
         border-radius: 100%;
-        box-shadow: 0 0 15px rgba(21,8,15,0.80);
-        
+        box-shadow: 0 0 15px rgba(21,8,15,0.80); 
+    }
+
+    @media (max-width: 400px) {
+        figure .photo-profil{
+            width:200px;
+            height:200px;
+        }
     }
     .profil-infos{
         margin:40px;
-        width:400px;
+        max-width:400px;
+        min-width:300px;
         margin:auto;
         padding-bottom:25px;
         
