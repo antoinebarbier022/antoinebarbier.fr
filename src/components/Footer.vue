@@ -9,7 +9,7 @@
             -->
             <a class="link-linkedin" target="_blank" href="https://www.linkedin.com/in/antoine-barbier-022"></a>
             </div>
-            <a class="email" href="mailto:contact@antoinebarbier.fr">antoinebarbier022@gmail.com</a>
+            <a class="email" href="mailto:contact@antoinebarbier.fr">contact@antoinebarbier.fr</a>
         </nav>
     </footer>
 </template>
