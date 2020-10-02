@@ -2,7 +2,7 @@
     <div class="bloc-content" :class="text ? (showContent ? '' : 'effectHover'): ''" @click="displayContent">
         <div class="infos-timeline">
             <p class="date" v-if="date">{{date}}</p>
-            <div>
+            <div class="content-title">
                 <p class="title" v-if="title" >{{title}}</p>
                 <p class="subtitle" v-if="subtitle" >{{subtitle}}</p>
             </div>
@@ -54,6 +54,10 @@
         cursor:pointer;
     }
 
+    .content-title{
+        margin-left:30px;
+    }
+
     .bloc-content:before {
         content: "";
         position: absolute;
@@ -97,6 +101,7 @@
     font-weight: 500;
 }
 .date{
+    min-width:120px;
     text-align: left;
     font-weight: 700;
   font-family: 'La-Belle-Aurore';
@@ -108,6 +113,17 @@
     text-align: left;
     margin-top:20px;
     padding:20px;
+}
+
+@media (max-width: 600px){
+    .infos-timeline{
+      display:flex;
+        flex-direction: column;
+        
+  }
+    .title, .subtitle{
+        text-align: left;
+    }
 }
 
 

@@ -35,11 +35,31 @@
         cursor:pointer
     }
 
+    h1{
+        padding-left:20px;
+        padding-right:20px;
+    }
     h1 a{
         margin-top:20px;
         margin-bottom:0px;
         font-size: 4.5rem;
         text-shadow: 2px 2px 3px rgba(21,8,15,0.50);
+    }
+
+    @media (max-width: 800px){
+        h1 a{
+            font-size: 4rem;
+        }
+    }
+    @media (max-width: 500px){
+        header nav{
+            display:none;
+        }
+    }
+    @media (max-width: 400px){
+        h1 a{
+            font-size: 3rem;
+        }
     }
 
 

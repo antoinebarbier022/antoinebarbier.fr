@@ -38,6 +38,10 @@
         margin-top:40px;
         margin-bottom:100px;
     }
+    figure{
+        margin-left:0;
+        margin-right:0;
+    }
 
     figure .photo-profil{
         width: 300px;
@@ -48,20 +52,17 @@
         box-shadow: 0 0 15px rgba(21,8,15,0.80); 
     }
 
-    @media (max-width: 400px) {
-        figure .photo-profil{
-            width:200px;
-            height:200px;
-        }
-    }
     .profil-infos{
         margin:40px;
         max-width:400px;
-        min-width:300px;
+        min-width:200px;
         margin:auto;
         padding-bottom:25px;
         
     }
+
+
+
     .profil-infos > p{
         color:white;
         background-color: rgba(255, 255, 255, 0.08);
@@ -101,6 +102,14 @@
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.061);
         opacity: 95%;
+    }
+
+    @media (max-width: 400px) {
+        figure .photo-profil{
+            width:200px;
+            height:200px;
+        }
+
     }
 
 </style>
