@@ -13,7 +13,7 @@
                 <p class="profil-description">
                     Je m'appelle Antoine Barbier
                     et je suis actuellement étudiant à la Faculté des Sciences de Montpellier en Master 1 - AIGLE (Architectures et Ingénieurie du Logiciel et du Web). 
-                    <br>En 2019 j'ai eu l'opportunité de partir étudier au Canada à l'<b>UQAC</b> (Université du Quèbec de Chicoutimi) dans le cadre d'un échange universitaire. 
+                    <br>En 2019 j'ai eu l'opportunité de partir étudier au Canada à l'<b>UQAC</b> (Université du Québec de Chicoutimi) dans le cadre d'un échange universitaire. 
                 </p>
             </div>
         </div>
