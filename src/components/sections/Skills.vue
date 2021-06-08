@@ -10,7 +10,8 @@
                 <ContentSkills title="CSS" icon="fab fa-css3-alt fa-3x" text="Découvert sur le site openclassroom en 2015."/>
                 <ContentSkills title="Javascript" icon="fab fa-js-square fa-3x" text="Langage de programmation que j'utilise avec le framework VueJs."/>
                 <ContentSkills title="VueJs" icon="fab fa-vuejs fa-3x" text="Framework utilisé pour la conception de mon site web et de www.mouflaquettes.fr"/>
-                <ContentSkills title="MySQL et Oracle" icon="fas fa-database fa-3x" text="Utilisation d'Oracle dans le cadre de mes études, et MySQL pour mes projets."/>
+                <ContentSkills title="MySQL, Oracle, MongoDB" icon="fas fa-database fa-3x" text="Utilisation d'Oracle et de MongoDB dans le cadre de mes études, et MySQL pour mes projets."/>
+                <ContentSkills title="Angular" icon="fab fa-angular fa-3x" text="Développement d'une plateforme de gestion de stages pour le département informatique de la Faculté des sciences de Montpellier."/>
             </div>
         </div>
 
@@ -18,9 +19,9 @@
             <h3>Programmation</h3>
             <div class="grid">
                 <ContentSkills title="C/C++" icon="fab fa-cuttlefish fa-3x" text="Langage de programmation utilisé dans la plupart de mes projets dans le cadre de ma licence informatique."/>
-                <ContentSkills title="Java" icon="fab fa-java fa-3x" text="Langage de programmation que j'ai étudié en 2ème années de ma licence informatique."/>
+                <ContentSkills title="Java" icon="fab fa-java fa-3x" text="Langage de programmation que j'ai étudié tout au long de mes études."/>
+                <ContentSkills title="Android" icon="fab fa-android fa-3x" text="Développement d'une application mobile (réseau social dévelopé en Java) avec Android Studio."/>
                 <ContentSkills title="Python" icon="fab fa-python fa-3x" text="Conception d'un jeu vidéo de plateforme dans le style Mario Bros avec la librarie Pygame."/>
-                <ContentSkills title="Swift" icon="fab fa-swift fa-3x" text="Suivi des cours d'openclassroom, dans l'objectif de créer des applications mobiles pour IOS."/>
             </div>
         </div>
 
@@ -28,6 +29,7 @@
             <h3>Logiciels</h3>
             <div class="grid">
                 <ContentSkills title="Photoshop, Illustrator" icon="fab fa-adobe fa-3x" text="Logiciels que j'utilise dans la création et la retouche d'images."/>
+                <ContentSkills title="Lumafusion" icon="fas fa-film fa-3x" text="Logiciel de montage vidéo sur Ipad que j'ai appris à maitriser au fur à mesure de la création de vidéos vacances/souvenir."/>
                 <ContentSkills title="Git" icon="fab fa-git-square fa-3x" text="Logiciel de gestion de versions décentralisé que j'utilise dans tous mes projets."/>
                 <ContentSkills title="Trello" icon="fab fa-trello fa-3x" text="Outil de gestion de projet en ligne que j'utilise lors des projets de groupe."/>
                 <ContentSkills title="Sketch" icon="fab fa-sketch fa-3x" text="Éditeur de graphiques vectoriels qui permet la créations de maquettes d'applications et de sites web."/>

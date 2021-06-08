@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1><a href="antoinebarbier.fr">Antoine Barbier</a></h1>
+        <h1><a href="/">Antoine Barbier</a></h1>
         <nav class="menu">
             <span class="link-text" v-scroll-to="'#parcours'">  Mes études</span>
             <span class="link-text" v-scroll-to="'#skills'">    Mes Compétences</span>
